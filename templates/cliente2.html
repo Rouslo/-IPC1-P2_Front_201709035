@@ -109,97 +109,43 @@
 		<div class="wrap-login100 p-b-160 p-t-50">
             <div id="header" >
             <ul class="nav">
-               
-                <form class="login100-form validate-form" action="http://127.0.0.1:5000/carga" method="POST">
-					<div class="container-login100-form-btn">
-                        <input class="login100-form-btn" type="file" id="file" name="file" multiple action="http://127.0.0.1:5000/carga" method="POST">
-                      </div>
-                      <div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							GUARDAR CARGA APLICACIONES
-						</button>
-					</div>
-					
-				</form>
-				
-				<form class="login100-form validate-form" action="http://127.0.0.1:5000/cargacliente" method="POST">
-					<div class="container-login100-form-btn">
-                        <input class="login100-form-btn" type="file" id="file" name="file" multiple action="http://127.0.0.1:5000/cargacliente" method="POST">
-                      </div>
-                      <div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							GUARDAR CARGA CLIENTES
-						</button>
-					</div>
-					
-                </form>
-                
-                <form class="login100-form validate-form" action="http://127.0.0.1:5000/pdf1" method="POST">
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							GENERAR REPORTE APLICACIONES
-						</button>
-					</div>
-					
-				</form>
-				
-				<form class="login100-form validate-form" action="http://127.0.0.1:5000/pdf2" method="POST">
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							GENERAR REPORTE CLIENTES
-						</button>
-					</div>
-					
-                </form>
+                <div class="col-md-7">
+                   
 
-                <form class="login100-form validate-form" action="http://127.0.0.1:5000/ir_registro" method="POST">
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							MODIFICAR DATOS PERSONALES
-						</button>
-					</div>
-					
-                </form>
 
-                <form class="login100-form validate-form" action="http://127.0.0.1:5000/ir_tabla1" method="POST">
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							TABLA DE APLICACIONES
-						</button>
-					</div>
-					
-                </form>
+                    <form action="http://127.0.0.1:5000/insertar_reseña" method="POST">
 
-                <form class="login100-form validate-form" action="http://127.0.0.1:5000/ir_tabla2" method="POST">
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							TABLA DE clientes
-						</button>
-					</div>
-					
-                </form>
+                        <div class="wrap-input100 rs2 validate-input" data-validate="Password is required">
+                            <span class="label-input100">ID </span>
+                        </div>
+                        <div class="wrap-input100 rs1 validate-input" data-validate = "Apellido is required">
+                            <input class="input100" type="text"  readonly="readonly" name="u" value="{{contact.0}}">
+                        </div>
 
-               
+                        <div class="wrap-input100 rs2 validate-input" data-validate="Password is required">
+                            <span class="label-input100">TITULO </span>
+                        </div>
+                        <div class="wrap-input100 rs1 validate-input" data-validate = "Apellido is required">
+                            <input class="input100" type="text"  readonly="readonly" name="u" value="{{contact.1}}">
+                        </div>
 
-                <form class="login100-form validate-form" action="http://127.0.0.1:5000/iradmo4" method="POST">
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							NEW ADMINISTRADOR
-						</button>
-					</div>
-					
-				</form>
-				
-				<form class="login100-form validate-form" action="http://127.0.0.1:5000/irinicio" method="POST">
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							SALIR
-						</button>
-					</div>
-					
-                </form>
-                
-              
+                        <div class="wrap-input100 rs2 validate-input" data-validate="Password is required">
+                            <span class="label-input100"> RESEÑA:</span>
+                        </div>
+    
+                        <div class="wrap-input100 rs1 validate-input" data-validate = "Usuario is required">
+                            <input class="input100" type="text" name="u1" >
+                        </div>
+    
+                        <div class="container-login100-form-btn">
+                            <button class="login100-form-btn">
+                                GUARDAR
+                            </button>
+                        </div>
+
+                    </form>
+
+                  </div>
 
 
 
